@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fontregular"
+            android:text="Register"
+            android:textColor="@color/semiblack"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Username"
+                android:padding="14dp"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="16sp"
+                android:fontFamily="@font/fontregular"/>
+
+            <EditText
+                android:id="@+id/edit_text_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/fontregular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_text_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/fontregular"
+                android:hint="Phone"
+                android:inputType="number"
+                android:padding="14dp"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_text_bg"
+                android:fontFamily="@font/fontregular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontregular"
+                android:padding="5dp"
+                android:text="Agree our terms and condition?"
+                android:textColor="@color/semiblack"
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/fontregular"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/have_acc"
+                    android:fontFamily="@font/fontregular"
+                    android:text="Have an Account?"
+                    android:textColor="@color/semiblack" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/have_acc"
+                    android:fontFamily="@font/fontregular"
+                    android:text="Log in"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_200"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
